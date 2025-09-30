@@ -4,12 +4,12 @@ class Book {
     double price;
 
         Book() {
-        this("Unknown Title", "Unknown Author", 0.0); // Calling parameterized constructor using 'this'
+        this("Unknown Title", "Unknown Author", 0.0); 
     }
 
    
     Book(String title, String author, double price) {
-        this.title = title;     // 'this' differentiates instance variables from parameters
+        this.title = title;     
         this.author = author;
         this.price = price;
     }
@@ -25,10 +25,11 @@ class Book {
 
 public class LibrarySystem {
     public static void main(String[] args) {
-        Book b1 = new Book();  // Default constructor
+        Book b1 = new Book();
         Book b2 = new Book("The Alchemist", "Paulo Coelho", 499.0); 
 
         b1.display();
         b2.display();
     }
 }
+
